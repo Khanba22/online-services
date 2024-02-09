@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: var(--fontColor);
+    box-sizing: border-box;
+}
+
+:root{
+    --bgMain:#C2DFE3;
+    --bgPrimary: #253238;
+    --bgSecondary:#5C6A73;
+    --fontColor:#C2DFE3;    
+}

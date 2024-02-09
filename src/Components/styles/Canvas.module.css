@@ -1,0 +1,205 @@
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+    }
+}
+
+.canvas {
+    z-index: 10;
+    transition: 1s ease-in;
+    top: 0;
+    width: 100vw;
+    height: 95vh;
+    background-color: var(--bgPrimary);
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    -webkit-transition: 1s ease-in;
+    -moz-transition: 1s ease-in;
+    -ms-transition: 1s ease-in;
+    -o-transition: 1s ease-in;
+}
+
+.content {
+    width: 50vw;
+    position: relative;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content h3 {
+    font-size: 26px;
+    transform: translateX(26%);
+    -webkit-transform: translateX(26%);
+    -moz-transform: translateX(26%);
+    -ms-transform: translateX(26%);
+    -o-transform: translateX(26%);
+}
+
+.content h1:nth-child(2) {
+    font-size: 56px;
+    transform: translateX(20%);
+    color: #253238;
+    filter: drop-shadow(4px 4px 4px #698B90);
+    -webkit-transform: translateX(20%);
+    -moz-transform: translateX(20%);
+    -ms-transform: translateX(20%);
+    -o-transform: translateX(20%);
+    -webkit-filter: drop-shadow(4px 4px 4px #698B90);
+}
+
+.content h1:nth-child(3) {
+    font-size: 56px;
+    transform: translateX(37%);
+    -webkit-transform: translateX(37%);
+    -moz-transform: translateX(37%);
+    -ms-transform: translateX(37%);
+    -o-transform: translateX(37%);
+}
+
+.shadow {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 10vh;
+    bottom: 0;
+    height: 30vh;
+    aspect-ratio: 1;
+    border-radius: 0px;
+    filter: blur(90px);
+    background-color: #769498;
+    border-radius: 50%;
+    -webkit-filter: blur(90px);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.topLeft {
+    position: absolute;
+    height: 44%;
+    aspect-ratio: 1;
+    left: 2%;
+    top: 0;
+}
+
+.topLeft img:nth-child(1) {
+    position: absolute;
+    bottom: 0;
+    height: 41%;
+    aspect-ratio: 1;
+    left: 0;
+    animation: rotate 2.3s linear infinite reverse;
+    -webkit-animation: rotate 2.3s linear infinite reverse;
+}
+
+.topLeft img:nth-child(2) {
+    position: absolute;
+    top: 5%;
+    left: 0;
+    height: 70%;
+    aspect-ratio: 1;
+    animation: rotate 3s linear infinite forwards;
+    -webkit-animation: rotate 3s linear infinite forwards;
+}
+
+.topLeft img:nth-child(3) {
+    position: absolute;
+    top: 5%;
+    right: 7%;
+    height: 41%;
+    aspect-ratio: 1;
+    animation: rotate 2.3s linear infinite reverse;
+    -webkit-animation: rotate 2.3s linear infinite reverse;
+}
+
+.topRight {
+    position: absolute;
+    height: 13%;
+    aspect-ratio: 1;
+    right: 20px;
+    top: 100px;
+    rotate: 90deg;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.topRight hr {
+    background-color: #769498;
+    color: #769498;
+    width: 7vw;
+    height: 4px;
+    border: none;
+}
+
+.topRight h2 {
+    font-size: 4rem;
+    padding: 10px;
+}
+
+.bottomLeft {
+    position: absolute;
+    height: 34%;
+    aspect-ratio: 1;
+    left: 6%;
+    bottom: 40px;
+}
+
+.bottomLeft img {
+    height: 90%;
+    width: fit-content;
+}
+
+.bottomRight {
+    position: absolute;
+    height: 55%;
+    aspect-ratio: 1;
+    right: 1%;
+    bottom: 2%;
+}
+
+.bottomRight img {
+    height: 100%;
+}
+
+.bottomCircle{
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2vw;
+    margin: auto;
+    width: 10svw;
+    height: 10vh;
+    background-color: #253238;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.bottomCircle img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 5px;
+    width: 30px;
+    aspect-ratio: 1;
+}
